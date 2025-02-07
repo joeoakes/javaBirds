@@ -1,6 +1,6 @@
 
 // Main class to test polymorphism
-public class Main {
+public abstract class Main {
     public static void main(String[] args) {
 
         //Create three Bird objects
