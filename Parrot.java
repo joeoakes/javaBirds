@@ -1,5 +1,6 @@
 // Subclass: Parrot
 class Parrot extends Bird {
+    //Constructor method
     public Parrot(String name, String color) {
         super(name, color);
     }
