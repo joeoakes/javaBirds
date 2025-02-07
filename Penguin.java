@@ -1,8 +1,17 @@
 // Subclass: Penguin
 class Penguin extends Bird {
-    //Constructor method
-    public Penguin(String name, String color) {
-        super(name, color);
+    private double swimSpeed; // Property specific to Penguins
+
+    // Constructor overloaded
+    public Penguin(String color, int age, double swimSpeed) {
+        super("Penguin", color, age);
+        this.swimSpeed = swimSpeed;
+    }
+
+    // Constructor overloaded
+    public Penguin(String name, String color, int age, double swimSpeed) {
+        super(name, color, age);
+        this.swimSpeed = swimSpeed;
     }
 
     @Override

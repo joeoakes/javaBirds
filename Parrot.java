@@ -1,8 +1,17 @@
 // Subclass: Parrot
 class Parrot extends Bird {
-    //Constructor method
-    public Parrot(String name, String color) {
-        super(name, color);
+    private boolean canMimic; // Property specific to Parrots
+
+    // Constructor Overloaded
+    public Parrot(String color, int age, boolean canMimic) {
+        super("Parrot", color, age);
+        this.canMimic = canMimic;
+    }
+
+    // Constructor Overloaded
+    public Parrot(String name, String color, int age, boolean canMimic) {
+        super(name, color, age);
+        this.canMimic = canMimic;
     }
 
     @Override
